@@ -6,7 +6,7 @@
 /*   By: nquecedo <nquecedo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 18:24:27 by nquecedo          #+#    #+#             */
-/*   Updated: 2023/12/13 13:34:57 by nquecedo         ###   ########.fr       */
+/*   Updated: 2023/12/14 17:22:34 by nquecedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,14 +21,14 @@
 
 size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	while (size > 1 && src[i] != '\0')
 	{
 		dest[i] = src[i];
 		i ++;
-		size --;
+		size--;
 	}
 	if (size != 0)
 		dest[i] = '\0';

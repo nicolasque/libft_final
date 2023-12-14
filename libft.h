@@ -6,7 +6,7 @@
 /*   By: nquecedo <nquecedo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 19:19:00 by nquecedo          #+#    #+#             */
-/*   Updated: 2023/12/14 10:45:43 by nquecedo         ###   ########.fr       */
+/*   Updated: 2023/12/14 18:34:15 by nquecedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ char	*ft_strdup(const char *str);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
-int	ft_count_splits(char const *s, char c);
-
+char	**ft_split(char const *s, char c);
+char	*ft_itoa(int n);
 
 #endif //LIBFT_H
