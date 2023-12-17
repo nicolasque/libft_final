@@ -6,7 +6,7 @@
 /*   By: nquecedo <nquecedo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/15 14:57:31 by nquecedo          #+#    #+#             */
-/*   Updated: 2023/12/17 21:38:42 by nquecedo         ###   ########.fr       */
+/*   Updated: 2023/12/17 22:02:04 by nquecedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,11 @@
 // 	c = c + (key - 'a');
 // 	return ((char )c);
 // }
-char ft_toupper_wraper(unsigned int i, char c)
-{
-	i++;
-	return(ft_toupper(c));
-}
+// char ft_toupper_wraper(unsigned int i, char c)
+// {
+// 	i++;
+// 	return(ft_toupper(c));
+// }
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
@@ -42,9 +42,9 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	}
 	return (cast_s);
 }
-int main()
-{
-	// printf("a + c = %c", ft_cifrate('a', 'c'));
-	printf("la salida es: %s", ft_strmapi("hola", ft_toupper_wraper));
-	return 0;
-}
+// int main()
+// {
+// 	// printf("a + c = %c", ft_cifrate('a', 'c'));
+// 	printf("la salida es: %s", ft_strmapi("hola", ft_toupper_wraper));
+// 	return 0;
+// }
