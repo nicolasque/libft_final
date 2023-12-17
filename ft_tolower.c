@@ -6,9 +6,11 @@
 /*   By: nquecedo <nquecedo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 18:26:03 by nquecedo          #+#    #+#             */
-/*   Updated: 2023/12/12 19:27:04 by nquecedo         ###   ########.fr       */
+/*   Updated: 2023/12/15 14:11:09 by nquecedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_tolower(int c)
 {

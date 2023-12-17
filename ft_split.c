@@ -6,13 +6,13 @@
 /*   By: nquecedo <nquecedo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 17:21:46 by nquecedo          #+#    #+#             */
-/*   Updated: 2023/12/14 18:30:50 by nquecedo         ###   ########.fr       */
+/*   Updated: 2023/12/17 17:41:35 by nquecedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_count_splits(char const *s, char c)
+static int	ft_count_splits(char const *s, char c)
 {
 	int	count;
 	int	bool_in_word;
@@ -36,7 +36,7 @@ int	ft_count_splits(char const *s, char c)
 	return (count);
 }
 
-int	ft_sub_len(char const *s, char c)
+static int	ft_sub_len(char const *s, char c)
 {
 	int	i;
 
