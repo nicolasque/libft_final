@@ -6,7 +6,7 @@
 /*   By: nquecedo <nquecedo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 18:23:16 by nquecedo          #+#    #+#             */
-/*   Updated: 2023/12/12 19:41:15 by nquecedo         ###   ########.fr       */
+/*   Updated: 2023/12/18 18:57:10 by nquecedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,3 +33,16 @@ char	*ft_strdup(const char *str)
 	new_str[i] = '\0';
 	return (new_str);
 }
+// int main()
+// {
+// 	char hola[] = "hola mundo";
+// 	char *copia;
+
+// 	printf("Original: %s\n", hola);
+
+// 	copia = ft_strdup(hola);
+
+// 	printf("Copia: %s", copia);
+
+// 	return 0;
+// }

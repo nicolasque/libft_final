@@ -1,24 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nquecedo <nquecedo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/17 22:02:46 by nquecedo          #+#    #+#             */
-/*   Updated: 2023/12/18 12:44:34 by nquecedo         ###   ########.fr       */
+/*   Created: 2023/12/18 12:41:36 by nquecedo          #+#    #+#             */
+/*   Updated: 2023/12/18 12:47:57 by nquecedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putchar_fd(char c, int fd)
+void	ft_putstr_fd(char *s, int fd)
 {
-	write(fd, &c, 1);
+	write(fd, s, ft_strlen(s));
 }
 
-// int	main(void)
+// int main()
 // {
-// 	ft_putchar_fd('c', 1);
-// 	return (0);
+// 	ft_putstr_fd("hola mundo", 1);
+// 	return 0;
 // }
