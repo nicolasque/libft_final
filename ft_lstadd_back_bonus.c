@@ -1,36 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_lstadd_back_bonus.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nquecedo <nquecedo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/12 18:24:27 by nquecedo          #+#    #+#             */
-/*   Updated: 2023/12/19 16:27:16 by nquecedo         ###   ########.fr       */
+/*   Created: 2023/12/19 12:44:51 by nquecedo          #+#    #+#             */
+/*   Updated: 2023/12/19 12:56:29 by nquecedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*
-* Esta función copia hasta size - 1 caracteres de la cadena de origen a dest,
-* añadiendo un carácter nulofinal. 
-* Devuelve la longitud total de la cadena que intentó crear,
-* que es la longitud de src.
-*/
-
-size_t	ft_strlcpy(char *dest, const char *src, size_t size)
+void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	size_t	i;
+	t_list	*last;
 
-	i = 0;
-	while (size > 1 && src[i] != '\0')
+	if (*lst)
 	{
-		dest[i] = src[i];
-		i ++;
-		size--;
+		last = ft_lstlast(*lst);
+		last->next = new;
 	}
-	if (size != 0)
-		dest[i] = '\0';
-	return (ft_strlen(src));
+	else
+	{
+		*lst = new;
+	}
 }
