@@ -6,22 +6,11 @@
 /*   By: nquecedo <nquecedo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/15 14:57:31 by nquecedo          #+#    #+#             */
-/*   Updated: 2023/12/17 22:02:04 by nquecedo         ###   ########.fr       */
+/*   Updated: 2023/12/19 20:41:34 by nquecedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-// char	ft_cifrate(unsigned int c, char key)
-// {
-// 	c = c + (key - 'a');
-// 	return ((char )c);
-// }
-// char ft_toupper_wraper(unsigned int i, char c)
-// {
-// 	i++;
-// 	return(ft_toupper(c));
-// }
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
@@ -42,6 +31,16 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	}
 	return (cast_s);
 }
+// char	ft_cifrate(unsigned int c, char key)
+// {
+// 	c = c + (key - 'a');
+// 	return ((char )c);
+// }
+// char ft_toupper_wraper(unsigned int i, char c)
+// {
+// 	i++;
+// 	return(ft_toupper(c));
+// }
 // int main()
 // {
 // 	// printf("a + c = %c", ft_cifrate('a', 'c'));
