@@ -6,21 +6,27 @@
 /*   By: nquecedo <nquecedo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 19:19:00 by nquecedo          #+#    #+#             */
-/*   Updated: 2023/12/19 21:25:28 by nquecedo         ###   ########.fr       */
+/*   Updated: 2024/02/04 18:23:16 by nquecedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <unistd.h>
 # include <stdlib.h>
+# include <stdio.h>
+# include <unistd.h>
+# include <stdarg.h>
 
 typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
 }	t_list;
+
+# define DEC_DIGS "0123456789"
+# define HEX_UP "0123456789ABCDEF"
+# define HEXA_LO "0123456789abcdef"
 
 void	*ft_memset(void *str, int c, size_t n);
 void	ft_bzero(void *s, size_t n);
@@ -65,5 +71,6 @@ void	ft_lstdelone(t_list *lst, void (*del)(void*));
 void	ft_lstclear(t_list **lst, void (*del)(void*));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+int	ft_printf(char const *str, ...);
 
 #endif //LIBFT_H
