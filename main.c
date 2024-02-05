@@ -6,7 +6,7 @@
 /*   By: nquecedo <nquecedo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/20 10:50:44 by nquecedo          #+#    #+#             */
-/*   Updated: 2023/12/20 10:59:33 by nquecedo         ###   ########.fr       */
+/*   Updated: 2024/02/04 18:27:47 by nquecedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,11 +86,8 @@ void test_ft_strtrim() {
 }
 
 int main() {
-	test_ft_split();
-	test_ft_substr();
-	test_ft_isalnum();
-	test_ft_strmapi();
-	test_ft_strtrim();
+
+	ft_printf("hola mundo");
 
 	return 0;
 }
